@@ -59,7 +59,7 @@ namespace BaGet
                     var root = Environment.GetEnvironmentVariable("BAGET_CONFIG_ROOT");
                     if (!string.IsNullOrEmpty(root))
                         config.SetBasePath(root);
-                }).UseUrls("http://127.0.0.1:8881");
+                });
 
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
